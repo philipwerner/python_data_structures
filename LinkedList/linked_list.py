@@ -92,6 +92,8 @@ class LinkedList(object):
                     current._next = new_node
                     self.length += 1
                     return
+                else:
+                    raise ValueError('Target value does not exist.')
 
     def find_node(self, input):
         """Check if node is in linked list."""
